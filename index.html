@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="description" content="A web based GBA emulator, without revokes.">
+        <meta name="keywords" content="gba4ios, web, igba, S0n1c, igba4ios, gba, appverse, inojb, inocydia, iemulators, iosemus, no revokes, no jailbreak, no cydia">
+
+        <title>iGBA</title>
+        <meta property="og:title" content="iGBA" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://devsquad.pro/igba/" />
+        <meta property="og:site_name" content="iGBA" />
+        <meta property="og:description" content="A web based GBA emualator, without revokes." />
+        <meta property="og:image" content="http://devsquad.pro/igba/icon.png" />
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="iGBA">
+        <meta name="twitter:description" content="A web based GBA emulator, without revokes.">
+        <meta name="twitter:image:src" content="http://devsquad.pro/igba/icon.png">
+        <meta name="twitter:domain" content="http://devsquad.pro/igba/">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <div id="home">
+                <h1>#iGBA</h1>
+            <div id="fade">
+                <center>
+                    <img src="icon.png" class="icon" /><br>
+                    <center>
+                        <a class="button" href="app">Play</a>&nbsp;
+                        <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&amp;ref_src=twsrc%5Etfw&amp;text=Go check out iGBA by @iGBAEmu http://devsquad.pro/igba//&amp;tw_p=tweetbutton&amp;" class="button">Tweet</a>
+                    </center>
+            </div>
+            </div>
+            <div id="team">
+                <h2>Our Team</h2>
+                <table>
+                    <tr>
+                        <td><img src="twitterimg.php?id=DanielD3V"></td>
+                        <td><img src="twitterimg.php?id=zistooshort"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://twitter.com/DanielDev/">@DanielD3V</a></td>
+                        <td><a href="https://twitter.com/zistooshort/">@zistooshort</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="twitterimg.php?id=S0n1c_Dev"></td>
+                        <td><img src="twitterimg.php?id=Hoxobi"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://twitter.com/S0n1c_Dev/">@S0n1c_Dev</a></td>
+                        <td><a href="https://twitter.com/Hoxobi/">@Hoxobi</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="twitterimg.php?id=JosephShenton"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://twitter.com/JosephShenton/">@JosephShenton</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="help">
+                <h2>Help</h2>
+                <h3>Load Custom ROM</h3>
+                <ul>
+                    <li>1: Get dropbox from the AppStore <a href="https://itunes.apple.com/us/app/dropbox/id327630330?mt=8">Link</a></li>
+                    <li>2: Get a unzipping tool from the AppStore and unzip the zip file <a href="https://itunes.apple.com/us/app/izip-zip-unzip-unrar-tool/id413971331?mt=8">Link</a></li>
+                    <li>3: Download a rom file <a href="http://www.emuparadise.me/Nintendo_Gameboy_Advance_ROMs/31">Link</a></li>
+                    <li>4: Unzip it</li>
+                    <li>5: Click on the .gba file and open it in Dropbox</li>
+                    <li>6: Go to iGBA and click on the Add Rom button and choose Dropbox</li>
+                    <li>7: Select the .gba file that you have on your Dropbox</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="links">
+            <li>&nbsp;<img src="icon.png" height="50" width="50"></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#team">iGBA Team</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+
+        <script>
+            var links = document.querySelectorAll('.links a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var to = document.getElementById(this.getAttribute('href').substr(1)).offsetTop;
+                    console.log(to);
+                    if (screenY == to) return;
+                    var diff = to - screenY;
+                    var scrollStep = diff / 50;
+                    console.log(screenY);
+                    console.log(diff);
+                    console.log(scrollStep);
+                    var count = 0, start = screenY;
+                    var scrollInterval = setInterval(function () {
+                        if (count <= 50) {
+                            count++;
+                            var currPos = start +  (count * scrollStep);
+                            console.log(currPos);
+                            document.body.scrollTop = currPos;
+                        } else clearInterval(scrollInterval);
+                    }, 10);
+                });
+            }
+        </script>
+    </body>
+</html>

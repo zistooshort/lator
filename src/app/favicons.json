@@ -1,0 +1,59 @@
+{
+    "masterPicture": "./icon.png",
+    "dest": "./app/",
+    "iconsPath": "/igba/app/",
+    "design": {
+        "ios": {
+            "pictureAspect": "noChange",
+            "assets": {
+                "ios6AndPriorIcons": false,
+                "ios7AndLaterIcons": true,
+                "precomposedIcons": true,
+                "declareOnlyDefaultIcon": true
+            },
+            "appName": "iGBA"
+        },
+        "desktopBrowser": {},
+        "windows": {
+            "pictureAspect": "noChange",
+            "backgroundColor": "#ffffff",
+            "onConflict": "override",
+            "assets": {
+                "windows80Ie10Tile": true,
+                "windows10Ie11EdgeTiles": {
+                    "small": true,
+                    "medium": true,
+                    "big": true,
+                    "rectangle": true
+                }
+            },
+            "appName": "iGBA"
+        },
+        "androidChrome": {
+            "pictureAspect": "shadow",
+            "themeColor": "#333333",
+            "manifest": {
+                "name": "iGBA",
+                "display": "standalone",
+                "orientation": "notSet",
+                "onConflict": "override",
+                "declared": true
+            },
+            "assets": {
+                "legacyIcon": true,
+                "lowResolutionIcons": false
+            }
+        },
+        "safariPinnedTab": {
+            "pictureAspect": "blackAndWhite",
+            "threshold": 93.75,
+            "themeColor": "#333333"
+        }
+    },
+    "settings": {
+        "compression": 1,
+        "scalingAlgorithm": "Mitchell",
+        "errorOnImageTooSmall": false
+    },
+    "markupFile": "./tmp/favicons.json"
+}

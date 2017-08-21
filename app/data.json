@@ -1,0 +1,83 @@
+{
+    "credits": [
+        {
+            "title": "The GBA Engine Makers",
+            "people": [
+                {
+                    "name": "Endrift",
+                    "tag": "The GBA.js Core Creator",
+                    "desc": "Thank you to Endrift for providing the GBA.js Engine",
+                    "service": "GitHub",
+                    "link": "https://github.com/endrift/",
+                    "image": "https://avatars3.githubusercontent.com/u/605502?v=3&s=460"
+                }
+            ]
+        },
+        {
+            "title": "Important People",
+            "people": [
+                {
+                    "name": "Daniel Tafjord",
+                    "tag": "Heart & Sole of iGBA",
+                    "desc": "Founder of iGBA and an Amazing Guy!",
+                    "twitter": "DanielD3V"
+                },
+                {
+                    "name": "S0n1c Dev",
+                    "tag": "Heart & Sole of iGBA",
+                    "desc": "Without S0n1c iGBA wouldn't be what is is today!",
+                    "twitter": "S0n1c_Dev"
+                },
+                {
+                    "name": "Hoxobi",
+                    "tag": "<3",
+                    "desc": "Helped a lot with PHP",
+                    "twitter": "Hoxobi"
+                },
+                {
+                    "name": "Z",
+                    "tag": "<3",
+                    "desc": "JS and PHP",
+                    "twitter": "zistooshort"
+                },
+                {
+                    "name": "Joseph Shenton",
+                    "tag": "Best Developer",
+                    "desc": "Without Joseph iGBA wouldn't have half the features it does now!",
+                    "twitter": "JosephShenton"
+                }
+            ]
+        }
+    ],
+    "roms": [
+        {
+            "title": "Pokémon Emerald",
+            "author": "The Pokémon Company",
+            "image": "roms/Pokemon-Emerald.gba",
+            "cover": "roms/emerald.png",
+            "type": "gba"
+        },
+        {
+            "title": "Pokémon FireRed",
+            "author": "The Pokémon Company",
+            "image": "roms/Pokemon-Firered.gba",
+            "cover": "roms/firered.png",
+            "type": "gba"
+        },
+        {
+            "title": "Pokémon LeafGreen",
+            "author": "The Pokémon Company",
+            "image": "roms/Pokemon-Leafgreen.gba",
+            "cover": "roms/leafgreen.png",
+            "type": "gba"
+        },
+        {
+            "title": "Pokémon Ruby",
+            "author": "The Pokémon Company",
+            "image": "roms/Pokemon-Ruby.gba",
+            "cover": "roms/ruby.png",
+            "type": "gba"
+        }
+    ],
+    "skins": []
+}
